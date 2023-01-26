@@ -4,9 +4,10 @@ import shutil
 
 # C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_createsamples.exe
 # C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_createsamples.exe -img cropped/13.jpg -bg neg_v2.txt -info test/13.txt -num 128 -maxxangle 0.0 -maxyangle 0.0 -maxzangle 0.3 -bgcolor 255 -bgthresh 8 -w 48 -h 48
-# C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data final/ -vec pos_v2.vec -bg neg_v3.txt -numPos 1000
-# -numNeg 600 -numStages 10 -precalcValBufSize 1024 -precalcIdxBufSize 1024 -w 48 -h 48
+# C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data final/ -vec pos_v2.vec -bg neg_v3.txt -numPos 1000 -numNeg 600 -numStages 10 -precalcValBufSize 1024 -precalcIdxBufSize 1024 -w 48 -h 48
+# C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data 2000_2000/ -vec pos_v3.vec -bg neg_v4.txt -numPos 2000  -numNeg 2000 -numStages 5 -precalcValBufSize 1024 -precalcIdxBufSize 1024 -w 48 -h 48
 
+#C:/Users/benny/Desktop/Uni/opencv/opencv/build/x64/vc15/bin/opencv_traincascade.exe -data v3_1/ -vec pos_v3.vec -bg neg_v4.txt -numPos 2000 -numNeg 2000 -numStages 5 -precalcValBufSize 1024 -precalcIdxBufSize 1024 -w 48 -h 48
 def neg_desc():
     with open('neg_v1.txt', 'w') as f:
         for filename in os.listdir('negative_v1'):
